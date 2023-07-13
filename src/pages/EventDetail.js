@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import { useData } from "../context/DataContext";
+import { Modal } from "../component/Modal";
 
 export const EventDetail = () => {
   const { id } = useParams();
@@ -59,6 +60,7 @@ export const EventDetail = () => {
           </button>
         )}
       </div>
+      {showModal && <Modal setShowModal={setShowModal} setIsPaid={setIsPaid} />}
     </div>
   );
 };
