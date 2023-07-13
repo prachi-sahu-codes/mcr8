@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router";
 import { useData } from "../context/DataContext";
 import { Modal } from "../component/Modal";
+import { CiLocationOn } from "react-icons/ci";
 
 export const EventDetail = () => {
   const { id } = useParams();
@@ -41,6 +42,13 @@ export const EventDetail = () => {
         </ul>
       </div>
       <div className="card-info">
+        <div className="timing-card">
+          <p className="bg-white">
+            <CiLocationOn />
+            {findEvent?.address}
+          </p>
+          <p className="bg-white">₹ {findEvent?.price}</p>
+        </div>
         <h2 className=" card-name">Speakers:({findEvent?.speakers.length})</h2>
         <ul className="speaker-cards">
           {" "}

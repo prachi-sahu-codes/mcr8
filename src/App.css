@@ -188,3 +188,13 @@
   margin: 0.5rem 0;
   border-radius: 5px;
 }
+
+.timing-card {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.bg-white {
+  background-color: white;
+}
