@@ -28,7 +28,7 @@ export const Modal = ({ setShowModal, setIsPaid, findEvent }) => {
           onChange={(e) =>
             setInputDetails(() => ({ ...inputDetails, name: e.target.value }))
           }
-          className="padding-bottom"
+          className="padding-bottom input-width"
         />
         <p className="speaker-content">Email:</p>
         <input
@@ -36,7 +36,7 @@ export const Modal = ({ setShowModal, setIsPaid, findEvent }) => {
           onChange={(e) =>
             setInputDetails(() => ({ ...inputDetails, email: e.target.value }))
           }
-          className="padding-bottom"
+          className="padding-bottom input-width"
         />
         {findEvent?.isPaid && (
           <p className="speaker-content padding-bottom text-gray">
