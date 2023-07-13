@@ -53,14 +53,25 @@ export const EventDetail = () => {
           ))}
         </ul>
         {isPaid ? (
-          <button className="button-style">Already RSVPed</button>
+          <button className="button-style clickable-button-style">
+            Already RSVPed
+          </button>
         ) : (
-          <button className="button-style" onClick={() => setShowModal(true)}>
+          <button
+            className="button-style clickable-button-style"
+            onClick={() => setShowModal(true)}
+          >
             RSVP
           </button>
         )}
       </div>
-      {showModal && <Modal setShowModal={setShowModal} setIsPaid={setIsPaid} />}
+      {showModal && (
+        <Modal
+          setShowModal={setShowModal}
+          setIsPaid={setIsPaid}
+          findEvent={findEvent}
+        />
+      )}
     </div>
   );
 };

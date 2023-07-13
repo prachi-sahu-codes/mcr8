@@ -160,9 +160,22 @@
   transform: translate(-50%, -50%);
   padding: 2rem;
   border-radius: 8px;
+  text-align: left;
 }
 .modal-cancel {
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
+}
+
+.text-gray {
+  color: rgb(109, 109, 109);
+}
+
+.clickable-button-style {
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+
+  border: none;
+  box-shadow: 0 2px solid rgb(66, 66, 66);
 }
