@@ -43,10 +43,12 @@ export const EventDetail = () => {
       </div>
       <div className="card-info">
         <div className="timing-card">
-          <p className="bg-white">
-            <CiLocationOn />
-            {findEvent?.address}
-          </p>
+          {findEvent?.address && (
+            <p className="bg-white">
+              <CiLocationOn />
+              {findEvent?.address}
+            </p>
+          )}
           <p className="bg-white">₹ {findEvent?.price}</p>
         </div>
         <h2 className=" card-name">Speakers:({findEvent?.speakers.length})</h2>
@@ -60,17 +62,21 @@ export const EventDetail = () => {
             </li>
           ))}
         </ul>
-        {isPaid ? (
-          <button className="button-style clickable-button-style">
-            Already RSVPed
-          </button>
-        ) : (
-          <button
-            className="button-style clickable-button-style"
-            onClick={() => setShowModal(true)}
-          >
-            RSVP
-          </button>
+        {findEvent?.price !== "Free" && (
+          <div>
+            {isPaid ? (
+              <button className="button-style clickable-button-style">
+                Already RSVPed
+              </button>
+            ) : (
+              <button
+                className="button-style clickable-button-style"
+                onClick={() => setShowModal(true)}
+              >
+                RSVP
+              </button>
+            )}
+          </div>
         )}
       </div>
       {showModal && (
