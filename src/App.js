@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { EventDetail } from "./pages/EventDetail";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -8,10 +8,11 @@ import { useData } from "./context/DataContext";
 
 function App() {
   const { state, dispatch } = useData();
+  const navigate = useNavigate();
   return (
     <div className="App">
       <nav className="navigation">
-        <img src={meetup} alt="logo" />
+        <img src={meetup} alt="logo" onClick={() => navigate("/")} />
         <div className="search">
           <AiOutlineSearch />
           <input
