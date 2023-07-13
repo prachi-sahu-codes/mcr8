@@ -2,8 +2,146 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
 .App {
   text-align: center;
+  padding: 0 4rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.search {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.input-search {
+  border: none;
+  background-color: #fff;
+  width: 9rem;
+  outline: none;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  margin: 2rem 0;
+  color: rgb(57, 57, 57);
+}
+
+.select-input {
+  border: none;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem 1rem;
+}
+
+.card {
+  position: relative;
+  text-align: left;
+}
+
+.card-img {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-event-type {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.card-name {
+  color: #393939;
+}
+
+.padding-bottom {
+  padding-bottom: 1rem;
+}
+
+.detail-img {
+  width: 480px;
+  height: 400px;
+  object-fit: cover;
+  padding: 2rem 0;
+}
+
+.flex {
+  display: flex;
+  gap: 4rem;
+}
+
+.flex-content-1 {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.button-style {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  background-color: #f55454;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.card-info {
+  width: 500px;
+}
+
+.speaker-card {
+  width: 200px;
+  list-style: none;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgb(230, 230, 230);
+}
+
+.speaker-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.speaker-cards {
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.speaker-content {
+  background-color: #fff;
 }
